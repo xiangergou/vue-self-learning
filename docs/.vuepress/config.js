@@ -10,6 +10,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/', icon: 'reco-home' },
+      { text: 'Guide', link: '/views/art/page1', icon: 'reco-date', location: 2, },
       { text: 'TimeLine', link: '/timeLine/', icon: 'reco-date' },
       { text: 'Contact', 
         icon: 'reco-message',
@@ -25,10 +26,10 @@ module.exports = {
     ],
     // 博客设置
     blogConfig: {
-      category: {
-        location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认 “分类”
-      },
+      // category: {
+      //   location: 2, // 在导航栏菜单中所占的位置，默认2
+      //   text: 'Category' // 默认 “分类”
+      // },
       tag: {
         location: 3, // 在导航栏菜单中所占的位置，默认3
         text: 'Tag' // 默认 “标签”
@@ -39,11 +40,33 @@ module.exports = {
     search: true,
     searchMaxSuggestions: 10,
     // 自动形成侧边导航
-    sidebar: 'auto',
+    // sidebar: 'auto',
+    sidebar: [
+      {
+        title: 'JavaScript', // 侧边栏名称
+        collapsable: true, // 可折叠
+        children: [
+          '/views/art/page1', // 你的md文件地址
+        ]
+
+      },
+
+    ],
+    // sidebar: {
+    //   '/views/art/': [
+    //     {
+    //       title: '正文(持续更新...)',
+    //       children: [
+    //         '',
+    //         'page1'
+    //       ]
+    //     }
+    //   ]
+    // },
     // 最后更新时间
     lastUpdated: 'Last Updated',
     // 作者
-    author: 'reco_luan',
+    author: 'liuxia',
     // 备案号
     record: 'xxxx',
     // 项目开始时间
