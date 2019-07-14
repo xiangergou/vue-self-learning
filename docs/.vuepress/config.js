@@ -46,7 +46,10 @@ module.exports = {
         title: 'JavaScript', // 侧边栏名称
         collapsable: true, // 可折叠
         children: [
-          '/views/art/page1', // 你的md文件地址
+          '/views/art/page0',
+          '/views/art/page1',
+          '/views/art/page2',
+          '/views/art/page3'
         ]
 
       },
